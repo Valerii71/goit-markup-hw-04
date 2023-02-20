@@ -54,6 +54,7 @@ img {
 
 .header {
   border-bottom: 1px solid var(--border-color);
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .header-container {
@@ -143,6 +144,7 @@ img {
   background-position: center;
   background-size: cover;
   text-align: center;
+  margin: 0 auto;
 }
 
 .container-hero {
@@ -216,16 +218,13 @@ img {
 }
 
 .feature-box {
-  display: block;
-  width: 264px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 112px;
   background-color: var(--team-color);
   border-radius: 4px;
   margin-bottom: 8px;
-}
-
-.icon-feature {
-  margin: 24px 100px;
 }
 
 .feature-item {
@@ -337,7 +336,10 @@ img {
 }
 
 .customer-box {
-  width: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
   height: 88px;
   border: 1px solid var(--icon-space);
   border-radius: 4px;
@@ -348,10 +350,6 @@ img {
 .customer-box:focus {
   border: 1px solid var(--accent-color);
   fill: var(--accent-color);
-}
-
-.icon-customer {
-  margin: 16px 32px;
 }
 
 /* Footer */
@@ -429,7 +427,7 @@ img {
 }
 
 .filter button:hover,
-.filter:focus {
+.filter button:focus {
   color: var(--main-color);
   background-color: var(--accent-color);
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
@@ -455,9 +453,13 @@ img {
   flex-basis: calc((100% - 48px) / 3);
 }
 
-.work-item:hover {
-  max-width: 360px;
-  border: 1px solid var(--team-color);
+.work-link {
+  display: block;
+  text-decoration: none;
+}
+
+.work-link:hover,
+.work-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
