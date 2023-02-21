@@ -472,3 +472,7 @@ img {
   color: var(--title-text-color);
   margin-bottom: 8px;
 }
+
+.work-text {
+  color: var(--primery-text-color);
+}
